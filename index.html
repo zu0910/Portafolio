@@ -1,75 +1,145 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Zully Ortiz</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <nav>
-                <a href="#about">Sobre Mí</a>
-                <a href="#skills">Habilidades</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#contact">Contacto</a>
-            </nav>
-            <h1>Zully Ortiz</h1>
-            <p>Desarrolladora Web Full Stack</p>
-            
+    <!-- Parte superior-->
+    <nav>
+        
+        <ul id="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#lenguajes">Lenguajes</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section id="about" class="section">
-            <div class="profile">
-                <img src="" alt="Foto de perfil">
-                <h2>Sobre Mí</h2>
-                <p>Info
+    <section id="inicio">
+        <div id="introduccion">
+            <div id="text">
+                <h2>¡Hola! Soy Zully, desarrolladora y apasionada por la tecnología. Aquí encontrarás innovación, creatividad y mucho código. </h2>
+                <p>¡Explora y descubre lo que puedo hacer!</p>
+                <button id="mas">MOSTRAR MAS INFORMACIÓN</button>
+            </div>
+            <img id="imagen" src="img/Captura de pantalla 2025-03-10 205151.png" >
+        </div>
+    </section>
+    
+    <section class="habilidades">
+        <h2 id="tituloHabi">Habilidades blandas</h2>
+        <div id="cuadros">
+            <div id="habi">
+                <div id="conte">
+                    <h1 id="habiTite">Comunicación efectiva</h1>
+                    <p id="habiConte">Expreso ideas de manera clara y efectiva, tanto en equipo como en documentación</p>
+                </div>
+            </div>
+            <div id="habi">
+                <div id="conte">
+                    <h1 id="habiTite">Trabajo en equipo</h1>
+                    <p id="habiConte">Me adapto bien en entornos colaborativos y disfruto aprender de los demás.</p>
+                </div>
+            </div>
+            <div id="habi">
+                <div id="conte">
+                    <h1 id="habiTite">Resolucón de problemas</h1>
+                    <p id="habiConte">Encuentro soluciones eficientes a desafíos técnicos y organizativos.</p>
+                </div>
+            </div>
+            <div id="habi">
+                <div id="conte">
+                    <h1 id="habiTite">Adaptabilidad y aprendizaje continuo</h1>
+                    <p id="habiConte">Me mantengo en constante aprendizaje para mejorar mis habilidades.</p>
+                </div>
+            </div>
+            <div id="habi">
+                <div id="conte">
+                    <h1 id="habiTite">Gestión de tiempo</h1>
+                    <p id="habiConte">Organizo mis tareas y proyectos de manera eficiente para cumplir con mis objetivos.</p>
+                </div>
+            </div>
+            <div id="habi">
+                <div id="conte">
+                    <h1 id="habiTite">Creatividad e innovación</h1>
+                    <p id="habiConte">Aporto ideas nuevas y encuentro formas originales de resolver problemas.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
+    <section id="sobre-mi">
+        <div id="infor">
+            <div id="conteni">
+                <h1 id="infoTi">Desarrolladora Full Stack Junior. Apasionada por la tecnología y la innovación</h1>
+                <p id="infoConte">¡Hola! Soy Zully Ortiz, una desarrolladora con un fuerte espíritu emprendedor, un alto nivel de inglés y un compromiso con el aprendizaje continuo.
+
+                Mi misión es crear soluciones tecnológicas eficientes, optimizadas y funcionales que aporten valor a las empresas y a los usuarios. Gracias a mi dominio del inglés, puedo colaborar con equipos y empresas a nivel internacional, facilitando la comunicación y la gestión de proyectos globales.
+                
+                Además de desarrollar software, creo en el poder del trabajo en equipo, la mentoría y el networking para impulsar el crecimiento profesional. Me encanta compartir conocimientos, participar en proyectos innovadores y ayudar a otros a fortalecer sus habilidades en el mundo del desarrollo.
+                
+                Siempre me caracterizo por mi energía positiva, mi enfoque en la excelencia y mi pasión por la tecnología.
                 </p>
+                <h3 id="infoMoti">Comprometida con la excelencia, la innovación y el desarrollo profesional.</h3>
             </div>
-        </section>
+            <img id="imagen1" src="img/Captura de pantalla 2025-03-10 222651.png" >
+        </div>
+    </section>
 
-        <section id="skills" class="section">
-            <h2>Lenguajes</h2>
-            <div class="skills-grid">
-                <div class="skill-item">HTML5 & CSS3</div>
-                <div class="skill-item">JavaScript</div>
-                <div class="skill-item">Java</div>
-                <div class="skill-item">Python</div>
+    <section id="proyectos">
+        <h1 id="proyecTite">Proyectos</h1>
+        <div id="cartas">
+            <div id="cards">
+                <img id="carta" src="" alt="no">
             </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>Proyectos</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>proyecto1</h3>
-                    <p>Descripcion.</p>
-                </div>
-                <div class="project-card">
-                    <h3>proyecto2</h3>
-                    <p>Descripcion.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Proyecto3</h3>
-                    <p>Descripcion.</p>
-                </div>
+            <div id="cards">
+                <img id="carta" src="" alt="no">
             </div>
-        </section>
+            <div id="cards">
+                <img id="carta" src="" alt="no">
+            </div>
+            <div id="cards">
+                <img id="carta" src="" alt="no">
+            </div>
+        </div>
+        
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Contacto</h2>
-            <p>Email</p>
-            <p>LinkedIn</p>
-            <p>Teléfono0</p>
-        </section>
-    </main>
+    <section id="lenguajes">
+        <h1 id="lenTite">Lenguajes</h1>
+        <div id="box">
+            <div id="lenguaj">
+                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Bases de Datos">
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2025 Zully Ortiz. Todos los derechos reservados.</p>
+        <div id="inferior">
+            <div id="links">
+                <div id="git"></div>
+                <div id="linkled"></div>
+            </div>
+            <div id="nombre">
+                <p>Zully Ortiz</p>
+                <p>Desarrolladora Full Stack Junior</p>
+            </div>
+        </div>
     </footer>
+<link rel="stylesheet" href="script.js">
 </body>
 </html>
