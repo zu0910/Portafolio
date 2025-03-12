@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Parte superior-->
-    <nav>
-        
+    <!-- Barra superior -->
+    <nav id="barra">
+        <h2 id="logo">Zully Ortiz</h2>
         <ul id="menu">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre mi</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#lenguajes">Lenguajes</a></li>
         </ul>
         <div class="hamburger">
             <span></span>
@@ -22,65 +21,24 @@
             <span></span>
         </div>
     </nav>
-
+    <!-- Introduccion del portafolio  -->
     <section id="inicio">
         <div id="introduccion">
             <div id="text">
-                <h2>¡Hola! Soy Zully, desarrolladora y apasionada por la tecnología. Aquí encontrarás innovación, creatividad y mucho código. </h2>
+                <h2>¡Hola! Soy Zully, desarrolladora Full Stack Junior, apasionada por la tecnología. Aquí encontrarás innovación, creatividad y mucho código. </h2>
                 <p>¡Explora y descubre lo que puedo hacer!</p>
-                <button id="mas">MOSTRAR MAS INFORMACIÓN</button>
-            </div>
-            <img id="imagen" src="img/Captura de pantalla 2025-03-10 205151.png" >
-        </div>
-    </section>
-    
-    <section class="habilidades">
-        <h2 id="tituloHabi">Habilidades blandas</h2>
-        <div id="cuadros">
-            <div id="habi">
-                <div id="conte">
-                    <h1 id="habiTite">Comunicación efectiva</h1>
-                    <p id="habiConte">Expreso ideas de manera clara y efectiva, tanto en equipo como en documentación</p>
-                </div>
-            </div>
-            <div id="habi">
-                <div id="conte">
-                    <h1 id="habiTite">Trabajo en equipo</h1>
-                    <p id="habiConte">Me adapto bien en entornos colaborativos y disfruto aprender de los demás.</p>
-                </div>
-            </div>
-            <div id="habi">
-                <div id="conte">
-                    <h1 id="habiTite">Resolucón de problemas</h1>
-                    <p id="habiConte">Encuentro soluciones eficientes a desafíos técnicos y organizativos.</p>
-                </div>
-            </div>
-            <div id="habi">
-                <div id="conte">
-                    <h1 id="habiTite">Adaptabilidad y aprendizaje continuo</h1>
-                    <p id="habiConte">Me mantengo en constante aprendizaje para mejorar mis habilidades.</p>
-                </div>
-            </div>
-            <div id="habi">
-                <div id="conte">
-                    <h1 id="habiTite">Gestión de tiempo</h1>
-                    <p id="habiConte">Organizo mis tareas y proyectos de manera eficiente para cumplir con mis objetivos.</p>
-                </div>
-            </div>
-            <div id="habi">
-                <div id="conte">
-                    <h1 id="habiTite">Creatividad e innovación</h1>
-                    <p id="habiConte">Aporto ideas nuevas y encuentro formas originales de resolver problemas.</p>
-                </div>
+                <button id="mas"><a href="#sobre-mi">MOSTRAR MAS INFORMACIÓN</a></button>
             </div>
         </div>
-        
     </section>
-
+    <!-- sobre mi -->
     <section id="sobre-mi">
+        <h2 id="tituloMi">Sobre mi</h2>
+        <!-- Informacion personal -->
         <div id="infor">
             <div id="conteni">
                 <h1 id="infoTi">Desarrolladora Full Stack Junior. Apasionada por la tecnología y la innovación</h1>
+                <br>
                 <p id="infoConte">¡Hola! Soy Zully Ortiz, una desarrolladora con un fuerte espíritu emprendedor, un alto nivel de inglés y un compromiso con el aprendizaje continuo.
 
                 Mi misión es crear soluciones tecnológicas eficientes, optimizadas y funcionales que aporten valor a las empresas y a los usuarios. Gracias a mi dominio del inglés, puedo colaborar con equipos y empresas a nivel internacional, facilitando la comunicación y la gestión de proyectos globales.
@@ -89,41 +47,76 @@
                 
                 Siempre me caracterizo por mi energía positiva, mi enfoque en la excelencia y mi pasión por la tecnología.
                 </p>
+                <br>
                 <h3 id="infoMoti">Comprometida con la excelencia, la innovación y el desarrollo profesional.</h3>
             </div>
-            <img id="imagen1" src="img/Captura de pantalla 2025-03-10 222651.png" >
+            
+            <div id="lenguajes">
+                <li id="len">JAVA</li>
+                <li id="len">JAVASCRIPT</li>
+                <li id="len">HTML</li>
+                <li id="len">CSS</li>
+                <li id="len">PYTHON</li>
+                <li id="len">BASE DE DATOS</li>
+            </div>
+            <img id="imagen1" src="img/foto-mia.png" >
         </div>
+        
     </section>
-
+    <section id="habilidades">
+        <!-- Mis habilidades -->
+        <h2 id="tituloHabi">Habilidades blandas</h2>
+        
+        <div id="cuadros">
+           <div id="conte">
+               <h1 id="habiTite">Comunicación efectiva</h1>
+               <p id="habiConte">Expreso ideas de manera clara y efectiva, tanto en equipo como en documentación</p>
+           </div>
+       
+           <div id="conte">
+               <h1 id="habiTite">Trabajo en equipo</h1>
+               <p id="habiConte">Me adapto bien en entornos colaborativos y disfruto aprender de los demás.</p>
+           </div>
+       
+           <div id="conte">
+               <h1 id="habiTite">Resolucón de problemas</h1>
+               <p id="habiConte">Encuentro soluciones eficientes a desafíos técnicos y organizativos.</p>
+           </div>
+       
+           <div id="conte">
+               <h1 id="habiTite">Adaptabilidad y aprendizaje continuo</h1>
+               <p id="habiConte">Me mantengo en constante aprendizaje para mejorar mis habilidades.</p>
+           </div>
+       
+           <div id="conte">
+               <h1 id="habiTite">Gestión de tiempo</h1>
+               <p id="habiConte">Organizo mis tareas y proyectos de manera eficiente para cumplir con mis objetivos.</p>
+           </div>
+       
+           <div id="conte">
+               <h1 id="habiTite">Creatividad e innovación</h1>
+               <p id="habiConte">Aporto ideas nuevas y encuentro formas originales de resolver problemas.</p>
+           </div>
+       </div>
+    </section>
+    <!-- poyectos mios -->
     <section id="proyectos">
         <h1 id="proyecTite">Proyectos</h1>
         <div id="cartas">
             <div id="cards">
-                <img id="carta" src="" alt="no">
+                <div id="titu">PokeApi</div>
+                <img id="carta" src="img/pock-api.jpg">
+                <div id="logoGit"><a href="https://github.com/zu0910/JavaScript_OrtizZully/tree/main/Dia10"><img src="img/github.png" ></a></div> 
             </div>
             <div id="cards">
-                <img id="carta" src="" alt="no">
+                <div id="titu">Space X</div>
+                <img id="carta" src="img/spaces.jpg" >
+                <div id="logoGit"><a href="https://github.com/zu0910/PROYECTO-FILTRO_JS_CAICEDOLUIS-ORTIZZULLY"><img src="img/github.png" ></a></div> 
             </div>
             <div id="cards">
-                <img id="carta" src="" alt="no">
-            </div>
-            <div id="cards">
-                <img id="carta" src="" alt="no">
-            </div>
-        </div>
-        
-    </section>
-
-    <section id="lenguajes">
-        <h1 id="lenTite">Lenguajes</h1>
-        <div id="box">
-            <div id="lenguaj">
-                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
-                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                <img id="img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Bases de Datos">
+                <div id="titu">campuslands ERP</div>
+                <img id="carta1" src="img/campuslands.jpeg">
+                <div id="logoGit"><a href="https://github.com/Luis-Orlando-Henao-Bermon/Proyecto_Python_HenaoLuis_OrtizZully"><img src="img/github.png" ></a></div> 
             </div>
         </div>
     </section>
@@ -131,8 +124,8 @@
     <footer>
         <div id="inferior">
             <div id="links">
-                <div id="git"></div>
-                <div id="linkled"></div>
+                <div id="git"><a href="https://github.com/zu0910"><img id="Git" src="img/github.png" ></a></div>
+                <div id="linkled"><a href="https://www.linkedin.com/in/zully-ortiz-759559353/"><img id="linkle" src="img/linkedin.png" alt=""></a></div>
             </div>
             <div id="nombre">
                 <p>Zully Ortiz</p>
@@ -140,6 +133,8 @@
             </div>
         </div>
     </footer>
-<link rel="stylesheet" href="script.js">
+
+
+<script src="script.js"></script>
 </body>
 </html>

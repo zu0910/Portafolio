@@ -1,145 +1,248 @@
+@font-face {
+    font-family: letra1;
+    src: url(fuentes/Kasper\ Lullaby.otf);
+}
+@font-face {
+    font-family: letra2;
+    src: url(fuentes/Sunny.otf);
+}
+@font-face {
+    font-family: letra3;
+    src: url(fuentes/LeoRounded-Bold.ttf);
+}
+@font-face {
+    font-family: letra4;
+    src: url(fuentes/LeoRounded-Light.ttf);
+}
+@font-face {
+    font-family: letra5;
+    src: url(fuentes/AppleGaramond-Light.ttf);
+}
 *{
     margin: 0;
     padding: 0;
 }
 
 
-
-#menu{
+/* Menu superior */
+nav#barra{
     width: 100%;
     height: 8vh;
     background-color: #fb92ba;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    text-decoration: none;
-    list-style: none;
+    justify-content: space-around;
     position: fixed;
+    top: 0;
+    z-index: 1000;
 }
-
+#menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 4vw;
+}
 #menu a{
     text-decoration: none;
     color: black;
+    font-family: letra3;
+    padding-top: 1vw;
+    font-size: 1vw;
+}
+#menu a:hover{
+    border-bottom: 1px solid #ffffff;
+}
+#logo{
+    font-family: letra2;
+    margin-left: 2vw;
+    width: 10vw;
+    color: black;
+    font-size: 2vw;
 }
 
+/* Menú Hamburguesa */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 2vw;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 2px 0;
+    transition: all 0.3s;
+}
+
+/*Inicio del portafolio*/
 #inicio{
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-color: #e8d4d1;
 }
-
-
- 
-
-  #introduccion{
+#introduccion{
     background-color: #e8d4d1;
     display: flex;
-    width: 70vw;
-    margin: auto auto;
-    gap: 2vw;
-  }
-
-  #text{
-    width: 35vw;
+}
+#text{
+    width: 45vw;
     text-align: center;
-    margin: 12vw auto;
-  }
-
-  #mas{
+    margin: 18vw auto;
+    font-family: letra3;
+    font-size: 1.5vw;
+}
+#mas{
     width: 15vw;
     height: 2vw;
     background-color: #fb92ba;
     border-radius: 20px;
     margin-top: 2vw;
     border: none;
-  }
-  #mas:hover{
+}
+li{
+    list-style: none;
+    width: 7vw;
+}
+#mas a{
+    text-decoration: none;
+    color: white;
+    font-family: letra4;
+    font-size: 1vw;
+}
+#mas:hover{
     cursor: pointer;
-  }
-  img#imagen {
-    width: 20vw;
-    height: 20vw;
-    margin: auto auto;
-    border-radius: 100px;
-  }
-
-  
-.habilidades{
-    width: 100%;
-    height: 50vh;
-    background-color: #ffffff;
 }
 
+/* sobre mi*/
+
+#sobre-mi{
+    width: 100%;
+    height: 70vh;
+    background-color: #ffffff;
+}
+#tituloMi{
+
+    font-family: letra3;
+    font-size: 2vw;
+    margin: 2vw 45vw;
+    padding-top: 1vw;
+}
+#tituloMi:hover{
+    cursor: pointer;
+    border-bottom: #fb92ba solid 3px;
+}
+#infor{
+    width: 70vw;
+    height: 15vw;
+    display: flex;
+    margin: auto auto;
+}
+#infoTi{
+    font-family: letra3;
+}
+#conteni{
+    font-family: letra5;
+    text-align: center;
+    font-size: 1.2vw;
+    margin: auto auto;
+    max-width: 34vw;
+}
+#infoMoti{
+    font-family: letra2;
+    font-weight: lighter;
+}
+img#imagen1{
+    width: 15vw;
+    height: 19vw;
+    margin: auto auto;
+    border-radius: 100%;
+    box-shadow: 3px 3px 5px 3px #fb92ba ;
+}
+#imagen1:hover{
+    width: 16vw;
+    height: 20vw;
+}
+#tituLen{
+    font-family: letra3;
+}
+#lenguajes{
+    text-align: center;
+    margin: auto auto;
+}
+li#len{
+    list-style: none;
+    width: 9vw;
+    height: 1.5vw;
+    background-color: #fb92ba;
+    margin-top: 1vw;
+    border-radius: 10px;
+    padding-top: 1vw;
+    font-family: letra1;
+    font-weight: lighter;
+}
+
+/*Habilidades personales*/
+#habilidades{
+    padding-top: 1vw;
+    width: 100%;
+    height: 40vh;
+    background-color: #fb92ba;
+}
 h2#tituloHabi{
-margin: 2vw auto;
-width: 15vw;
+    margin: 2vw 40vw;
+    width: 21vw;
+    font-family: letra3;
+    font-size: 2vw;
+}
+#tituloHabi:hover{
+    cursor: pointer;
+    border-bottom: #fb92ba solid 3px;
 }
 
 #cuadros{
-display: flex;
-flex-wrap: wrap; 
-gap: 2vw; 
-justify-content: center; 
-
-}
-
-#habi{
-background-color: #ffbfd7;
-width: 13vw;
-height: 17vw;
-border-radius: 30px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-#conte{
-background-color: #fffaf3;
-width: 100%;
-height: 14vw;
-border-radius: 0 0 30px 30px;
-text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin-top: 3vw;
-}
-
-#sobre-mi{
-width: 100%;
-height: 70vh;
-background-color: #fceae3;
-}
-#infor{
-    width: 70%;
-    height: 35vw;
     display: flex;
+    flex-wrap: wrap; 
+    gap: 2vw; 
+    justify-content: center; 
+    
+}
+#conte:hover{
+    cursor: pointer;
+    width: 14vw;
+    height: 11vw;
+    background-color: #e8d4d1;
+    box-shadow: 3px 3px 5px 3px #f5f4f2 ;
+}
+#habiTite{
+    font-family: letra3;
+    width: 10vw;
     margin: auto auto;
-    gap: 2vw;
 }
-#conteni{
-    background-color: #fb92ba;
-    text-align: center;
-    margin-top: 5vw;
-    width: 35vw;
-    height: 25vw;
+#habiConte{
+    font-family: letra5;
+    font-size: 1vw;
+    width: 10vw;
+    margin: auto auto;
 }
-img#imagen1{
-    width: 30vw;
-    height: 25vw;
-    margin: 5vw auto;
-    border-radius: 35px;
-}
-
 #proyectos{
     width: 100%;
     height: 70vh;
-    background-color: #f9a5bc;
+    background-color: #ffffff;
 }
 #proyecTite{
     text-align: center;
     margin: auto;
     padding-top: 3vw;
+    font-family: letra3;
+    font-size: 2vw;
+    width: 15vw;
+}
+#proyecTite:hover{
+    cursor: pointer;
+    border-bottom: #fb92ba solid 3px;
 }
 #cartas{
     display: flex;
@@ -147,27 +250,61 @@ img#imagen1{
     margin: 4vw auto;
     width: 80%;
     justify-content: space-around;
+    
 }
 
+#titu{
+    text-align: center;
+    margin: 2vw 5.5vw;
+    font-size: 1vw;
+    font-family: letra3;
+}
 #cards{
-    width: 16vw;
+    width: 17vw;
     height: 16vw;
     border-radius: 20px;
-    background-color: #fffaf3;
+    background-color: #fdfcfb;
+    border: 1px solid #333;
 }
-
-h1#lenTite{
-    margin: 2vw 46vw;
+#cards:hover{
+    width: 18vw;
+    height: 17vw;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 3px #333 ;
 }
-#box {
-    width: 50vw;
-    margin: auto auto;
-    display: flex;
-}
-
-img#img {
-    width: 7vw;
+img#carta{
+    width: 12vw;
     height: 7vw;
+    border-radius: 20px;
+    margin: -0.5vw 3vw;
+    border:1px solid #333;
+    box-shadow: 3px 3px 2px 2px #fb92ba;
+}
+img#carta1{
+    width: 8vw;
+    height: 7vw;
+    border-radius: 20px;
+    margin: -1vw 5vw;
+    border:1px solid #333;
+    box-shadow: 3px 3px 2px 2px #fb92ba;
+}
+#conte{
+    background-color: #fffaf3;
+    width: 13vw;
+    height: 10vw;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    border:  1px solid #333;
+}
+
+#logoGit img{
+    width: 2vw;
+    height: 2vw;
+    margin: 1.5vw 8vw;
 }
 #inferior{
     width: 100%;
@@ -185,16 +322,231 @@ img#img {
     text-align: center;
 }
 #git{
-    width: 2.5vw;
-    height: 2.5vw;
-    background-color: #ffd254;
     border-radius: 100%;
 }
-#linkled{
+img#Git{
     width: 2.5vw;
     height: 2.5vw;
-    background-color: #ffd254;
+    
+}
+#linkled{
     border-radius: 100%;
+}
+img#linkle{
+    width: 2.5vw;
+    height: 2.5vw;
+}
+#nombre{
+    font-family: letra3;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 8vh;
+        width: 50vw;
+        height: 25vh;
+        background: rgba(255, 255, 255, 0.95);
+        text-align: center;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu li {
+        margin: auto auto;
+        font-size: 2vw;
+    }
+    #logo{
+        margin-left: -10vw;
+        width: 15vw;
+        font-size: 4vw;
+    }
+    
+    /*Inicio del portafolio*/
+    #inicio{
+        height: 50vh;
+    }
+    #text{
+        width: 60vw;
+        margin: 30vw auto;
+        font-size: 3vw;
+    }
+    #mas{
+        width: 35vw;
+        height: 6vw;
+    }
+    li{
+        width: 7vw;
+    }
+    #mas a{
+        font-family: letra5;
+        font-size: 3vw;
+    }
+
+    /* sobre mi*/
+    #tituloMi{
+        font-size: 4vw;
+        width: 20vw;
+        padding-top: 3vw;
+    }
+    #infor{
+        flex-direction: column;
+    }
+    #infoTi{
+        font-family: letra3;
+        font-size: 3vw;
+        width: 50vw;
+        margin-left: 6vw;
+    }
+    #conteni{
+        font-size: 3vw;
+        margin: auto auto;
+        max-width: 60vw;
+    }
+    img#imagen1{
+        width: 25vw;
+        height: 30vw;
+        margin: -40vw 45vw;
+    }
+    #imagen1:hover{
+        width: 26vw;
+        height: 31vw;
+    }
+    #lenguajes{
+        text-align: center;
+        margin: 5vw 10vw;
+    }
+    li#len{
+        width: 19vw;
+        height: 3vw;
+        background-color: #fb92ba;
+        margin-top: 3vw;
+        padding-top: 1vw;
+        font-size: 2vw;
+    }
+
+    /*Habilidades personales*/
+    #habilidades{
+        padding-top: 1vw;
+        width: 100%;
+        height: 60vh;
+    }
+    h2#tituloHabi{
+        margin: 2vw 40vw;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #cuadros{
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        
+    }
+    #conte{
+        width: 60vw;
+        height: 15vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto auto;
+    }
+    #conte:hover{
+        cursor: pointer;
+        width: 61vw;
+        height: 16vw;
+        background-color: #e8d4d1;
+        box-shadow: 3px 3px 5px 3px #f5f4f2 ;
+    }
+    #habiTite{
+        font-size: 2.5vw;
+        margin: auto auto;
+    }
+    #habiConte{
+        font-size: 2.5vw;
+        width: 20vw;
+        margin: auto auto;
+    }
+    #proyectos{
+        width: 100%;
+        height: 80vh;
+    }
+    #proyecTite{
+        font-size: 4vw;
+        width: 15vw;
+    }
+    #cartas{
+        display: flex;
+        flex-direction: column;
+        margin: 5vw 10vw;
+        
+    }
+
+    #titu{
+        text-align: center;
+        margin: 2vw 5.5vw;
+        font-size: 4vw;
+        font-family: letra3;
+    }
+    #cards{
+        width: 50vw;
+        height: 46vw;
+        margin: auto auto;
+        margin-top: 3vw;
+    }
+    #cards:hover{
+        width: 51vw;
+        height: 47vw;
+    }
+    img#carta{
+        width: 43vw;
+        height: 27vw;
+    }
+    img#carta1{
+        width: 35vw;
+        height: 27vw;
+        margin: 0vw 7vw;
+    }
+    
+    #logoGit img{
+        width: 4.5vw;
+        height: 4.5vw;
+        margin: 2.5vw 24vw;
+    }
+    #inferior{
+        height: 8vh;
+        display: flex;
+        flex-direction: column;
+    }
+    #links{
+        margin: auto auto;
+    }
+    #nombre{
+        margin: auto 27vw;
+        text-align: center;
+    }
+    img#Git{
+        width: 5vw;
+        height: 5vw;
+        
+    }
+    img#linkle{
+        width: 5vw;
+        height: 5vw;
+    }
+    #nombre{
+        font-family: letra3;
+    }
+
 }
 
 
