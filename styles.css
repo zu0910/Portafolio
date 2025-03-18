@@ -48,17 +48,17 @@ nav#barra{
     color: black;
     font-family: letra3;
     padding-top: 1vw;
-    font-size: 1vw;
+    font-size: clamp(1.2rem,2vw,2rem);
 }
 #menu a:hover{
     border-bottom: 1px solid #ffffff;
 }
 #logo{
-    font-family: letra2;
+    font-family: letra1;
     margin-left: 2vw;
     width: 10vw;
     color: black;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 /* Menú Hamburguesa */
@@ -87,10 +87,17 @@ nav#barra{
     background-color: #e8d4d1;
     display: flex;
 }
+#avatar img{
+    border-radius: 100%;
+    width: 20vw;
+    height: 22vw;
+    margin: 15vw 15vw;
+    box-shadow: 3px 3px 5px 3px #fb92ba ;
+}
 #text{
     width: 45vw;
     text-align: center;
-    margin: 18vw auto;
+    margin: 18vw -6vw;
     font-family: letra3;
     font-size: 1.5vw;
 }
@@ -104,7 +111,6 @@ nav#barra{
 }
 li{
     list-style: none;
-    width: 7vw;
 }
 #mas a{
     text-decoration: none;
@@ -170,12 +176,11 @@ img#imagen1{
 }
 #lenguajes{
     text-align: center;
-    margin: auto auto;
 }
 li#len{
     list-style: none;
     width: 9vw;
-    height: 1.5vw;
+    height: 2vw;
     background-color: #fb92ba;
     margin-top: 1vw;
     border-radius: 10px;
@@ -219,6 +224,7 @@ h2#tituloHabi{
 #habiTite{
     font-family: letra3;
     width: 10vw;
+    font-size: 1vw;
     margin: auto auto;
 }
 #habiConte{
@@ -229,7 +235,7 @@ h2#tituloHabi{
 }
 #proyectos{
     width: 100%;
-    height: 70vh;
+    height: 78vh;
     background-color: #ffffff;
 }
 #proyecTite{
@@ -256,27 +262,27 @@ h2#tituloHabi{
 #titu{
     text-align: center;
     margin: 2vw 5.5vw;
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: letra3;
 }
 #cards{
-    width: 17vw;
-    height: 16vw;
+    width: 24vw;
+    height: 26vw;
     border-radius: 20px;
     background-color: #fdfcfb;
     border: 1px solid #333;
 }
 #cards:hover{
-    width: 18vw;
-    height: 17vw;
+    width: 26vw;
+    height: 27vw;
     cursor: pointer;
     box-shadow: 3px 3px 5px 3px #333 ;
 }
 img#carta{
-    width: 12vw;
-    height: 7vw;
+    width: 14vw;
+    height: 8vw;
     border-radius: 20px;
-    margin: -0.5vw 3vw;
+    margin: auto 5vw;
     border:1px solid #333;
     box-shadow: 3px 3px 2px 2px #fb92ba;
 }
@@ -284,7 +290,7 @@ img#carta1{
     width: 8vw;
     height: 7vw;
     border-radius: 20px;
-    margin: -1vw 5vw;
+    margin: auto 8vw;
     border:1px solid #333;
     box-shadow: 3px 3px 2px 2px #fb92ba;
 }
@@ -300,16 +306,31 @@ img#carta1{
     flex-wrap: wrap;
     border:  1px solid #333;
 }
-
-#logoGit img{
-    width: 2vw;
-    height: 2vw;
-    margin: 1.5vw 8vw;
+#infoCard{
+    font-family: letra4;
+    text-align: center;
+    margin: 2vw auto;
+    width: 20vw;
+}
+#logoGit1 img{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: -1vw 10vw;
+}
+#logoGit2 img{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 1vw 10vw;
+}
+#logoGit3 img{
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: -1vw 11vw;
 }
 #inferior{
     width: 100%;
     height: 8vh;
-    background-color: #fffaf3;
+    background-color: #e8d4d1;
     display: flex;
 }
 #links{
@@ -343,6 +364,7 @@ img#linkle{
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+        margin-left: 50vw;
     }
 
     #menu {
@@ -358,14 +380,15 @@ img#linkle{
 
     #menu.active {
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #menu li {
-        margin: auto auto;
         font-size: 2vw;
     }
     #logo{
-        margin-left: -10vw;
+        margin-left: -5vw;
         width: 15vw;
         font-size: 4vw;
     }
@@ -373,6 +396,17 @@ img#linkle{
     /*Inicio del portafolio*/
     #inicio{
         height: 50vh;
+    }
+    #introduccion{
+        background-color: #e8d4d1;
+        display: flex;
+    }
+    #avatar img{
+        border-radius: 100%;
+        width: 20vw;
+        height: 22vw;
+        margin: 15vw 15vw;
+        box-shadow: 3px 3px 5px 3px #fb92ba ;
     }
     #text{
         width: 60vw;
@@ -382,9 +416,6 @@ img#linkle{
     #mas{
         width: 35vw;
         height: 6vw;
-    }
-    li{
-        width: 7vw;
     }
     #mas a{
         font-family: letra5;
@@ -397,6 +428,7 @@ img#linkle{
         width: 20vw;
         padding-top: 3vw;
     }
+    
     #infor{
         flex-direction: column;
     }
@@ -478,7 +510,7 @@ img#linkle{
     }
     #proyectos{
         width: 100%;
-        height: 80vh;
+        height: 85vh;
     }
     #proyecTite{
         font-size: 4vw;
@@ -545,6 +577,7 @@ img#linkle{
     }
     #nombre{
         font-family: letra3;
+        font-size: 2vw;
     }
 
 }
