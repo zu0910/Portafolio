@@ -4,157 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barra superior -->
-    <nav id="barra">
-        <h2 id="logo">Zully Ortiz</h2>
-        <ul id="menu">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mi</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-        </ul>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <nav id="navegacion" class="navegacion">
+        
+        <div class="contenedor">
+            <a href="#" class="logo">Zully Ortíz</a>
+
+            <input type="checkbox" id="menu" class="menu">
+            <label for="menu" class="boton-menu">&#9776;</label>
+
+            <div class="enlaces">
+                <a href="#sobre-mi">Sobre Mí</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#lenguajes">Lenguajes</a>
+                <a href="#contacto">Contáctame</a>
+            </div>
+        </div>
+        
+        <div id="menucito" class="menucito">
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#lenguajes">Lenguajes</a>
+            <a href="#contacto">Contáctame</a>
         </div>
     </nav>
-    <!-- Introduccion del portafolio  -->
-    <section id="inicio">
-        <div id="introduccion">
-            <div id="text">
-                <h2>¡Hola! Soy Zully, desarrolladora Full Stack Junior, apasionada por la tecnología. Aquí encontrarás innovación, creatividad y mucho código. </h2>
-                <p>¡Explora y descubre lo que puedo hacer!</p>
-                <button id="mas"><a href="#sobre-mi">MOSTRAR MAS INFORMACIÓN</a></button>
-            </div>
+    
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor">
+            <h1 class="animar">¡Hola, soy Zully Ortiz!</h1>
+            <p class="animar">Desarrolladora Full Stack Junior</p>
+            <a href="#contacto" class="boton animar">Contáctame</a>
         </div>
     </section>
-    <!-- sobre mi -->
-    <p id="sobre-miA"></p>
-    <section id="sobre-mi">
-        <h2 id="tituloMi">Sobre mi</h2>
-        <!-- Informacion personal -->
-        <div id="infor">
-            <div id="conteni">
-                <h1 id="infoTi">Desarrolladora Full Stack Junior. Apasionada por la tecnología y la innovación</h1>
-                <br>
-                <p id="infoConte">¡Hola! Soy Zully Ortiz, una desarrolladora con un fuerte espíritu emprendedor, un alto nivel de inglés y un compromiso con el aprendizaje continuo.
-                    
-                    Mi misión es crear soluciones tecnológicas eficientes, optimizadas y funcionales que aporten valor a las empresas y a los usuarios. Gracias a mi dominio del inglés, puedo colaborar con equipos y empresas a nivel internacional, facilitando la comunicación y la gestión de proyectos globales.
-                    
-                    Además de desarrollar software, creo en el poder del trabajo en equipo, la mentoría y el networking para impulsar el crecimiento profesional. Me encanta compartir conocimientos, participar en proyectos innovadores y ayudar a otros a fortalecer sus habilidades en el mundo del desarrollo.
-                    
-                    Siempre me caracterizo por mi energía positiva, mi enfoque en la excelencia y mi pasión por la tecnología.
+
+    <!-- Sobre Mí -->
+     <section id="sobre-mi" class="seccion">
+        <div class="contenedor">
+            <h2 class="animar">Sobre Mí</h2>
+            <div class="contenido-sobre-mi">
+                <img class="foto animar" src="img/foto perfil.jpg">
+                <p class="animar">
+                    Soy una desarrolladora con un fuerte espíritu emprendedor, un alto nivel de inglés y un compromiso con el aprendizaje continuo. Mi misión es crear soluciones tecnológicas eficientes, optimizadas y funcionales que aporten valor a las empresas y a los usuarios. Gracias a mi dominio del inglés, puedo colaborar con equipos y empresas a nivel internacional, facilitando la comunicación y la gestión de proyectos globales. Además de desarrollar software, creo en el poder del trabajo en equipo, la mentoría y el networking para impulsar el crecimiento profesional. Me encanta compartir conocimientos, participar en proyectos innovadores y ayudar a otros a fortalecer sus habilidades en el mundo del desarrollo. Siempre me caracterizo por mi energía positiva, mi enfoque en la excelencia y mi pasión por la tecnología.
                 </p>
-                <br>
-                <h3 id="infoMoti">Comprometida con la excelencia, la innovación y el desarrollo profesional.</h3>
-            </div>
-            
-            <div id="lenguajes">
-                <li id="len">JAVA</li>
-                <li id="len">JAVASCRIPT</li>
-                <li id="len">HTML</li>
-                <li id="len">CSS</li>
-                <li id="len">PYTHON</li>
-                <li id="len">BASE DE DATOS</li>
-            </div>
-            <img id="imagen1" src="img/foto-mia.png" >
-        </div>
-        
-    </section>
-    <section id="habilidades">
-        <!-- Mis habilidades -->
-        <h2 id="tituloHabi">Habilidades blandas</h2>
-        
-        <div id="cuadros">
-            <div id="conte">
-                <h1 id="habiTite">Comunicación efectiva</h1>
-                <p id="habiConte">Expreso ideas de manera clara y efectiva, tanto en equipo como en documentación</p>
-            </div>
-            
-            <div id="conte">
-                <h1 id="habiTite">Trabajo en equipo</h1>
-                <p id="habiConte">Me adapto bien en entornos colaborativos y disfruto aprender de los demás.</p>
-            </div>
-            
-            <div id="conte">
-                <h1 id="habiTite">Resolucón de problemas</h1>
-                <p id="habiConte">Encuentro soluciones eficientes a desafíos técnicos y organizativos.</p>
-            </div>
-            
-            <div id="conte">
-                <h1 id="habiTite">Adaptabilidad y aprendizaje continuo</h1>
-                <p id="habiConte">Me mantengo en constante aprendizaje para mejorar mis habilidades.</p>
-            </div>
-            
-            <div id="conte">
-                <h1 id="habiTite">Gestión de tiempo</h1>
-                <p id="habiConte">Organizo mis tareas y proyectos de manera eficiente para cumplir con mis objetivos.</p>
-            </div>
-            
-            <div id="conte">
-                <h1 id="habiTite">Creatividad e innovación</h1>
-                <p id="habiConte">Aporto ideas nuevas y encuentro formas originales de resolver problemas.</p>
             </div>
         </div>
-    </section>
-    <!-- poyectos mios -->
-    <section id="proyectos">
-        <h1 id="proyecTite">Proyectos</h1>
-        <div id="cartas">
-            <div id="cards">
-                <div id="titu">PokeApi</div>
-                <img id="carta" src="img/pock-api.jpg">
-                <p id="infoCard">Es un programa que usa la PokeApi y con esto simula la pokedex y muestra los pokemones con su numero y nombre y contiene su sonido, tambien puedes retroceder y avanzar las veces que deseas.</p>
-                <div id="logoGit1"><a href="https://github.com/zu0910/JavaScript_OrtizZully/tree/main/Dia10"><img src="img/github.png" ></a></div> 
-            </div>
-            <div id="cards">
-                <div id="titu">Space X</div>
-                <img id="carta" src="img/spaces.jpg" >
-                <p id="infoCard">Space X es una pagina interactiva y atractivamente visual con informacion y el consumo de API</p>
-                <div id="logoGit2"><a href="https://github.com/zu0910/PROYECTO-FILTRO_JS_CAICEDOLUIS-ORTIZZULLY"><img src="img/github.png" ></a></div> 
-            </div>
-            <div id="cards">
-                <div id="titu">campuslands ERP</div>
-                <img id="carta1" src="img/campuslands.jpeg">
-                <p id="infoCard">Campuslands ERP es una plataforma en el lenguaje de Python para la gestion de procesos academicos la cual permirte registrar y hacer seguimiento a los estudiantes.</p>
-                <div id="logoGit3"><a href="https://github.com/Luis-Orlando-Henao-Bermon/Proyecto_Python_HenaoLuis_OrtizZully"><img src="img/github.png" ></a></div> 
+     </section>
+
+    <!-- Habilidades -->
+    <section class="seccion fondo-gris" id="habilidades">
+        <div class="contenedor">
+            <h2 class="animar">Habilidades</h2>
+            <div class="cuadricula">
+                <div class="tarjeta escalar animar">
+                    <h3>Comunicación Efectiva</h3>
+                    <p>Expreso ideas de manera clara y efectiva, tanto en equipo como en documentación.</p>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <h3>Trabajo en Equipo</h3>
+                    <p>Me adapto bien en entornos colaborativos y disfruto aprender de los demás.</p>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <h3>Resolución de Problemas</h3>
+                    <p>Encuentro soluciones eficientes a desafíos técnicos y organizativos.</p>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <h3>Adaptabilidad</h3>
+                    <p>Me mantengo en constante aprendizaje para mejorar mis habilidades.</p>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <h3>Gestión del Tiempo</h3>
+                    <p>Organizo mis tareas y proyectos de manera eficiente para cumplir objetivos.</p>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <h3>Creatividad</h3>
+                    <p>Aporto ideas nuevas y encuentro formas originales de resolver problemas.</p>
+                </div>
             </div>
         </div>
-    </section>
-    <!--Contacto -->
-    <section id="contacto" class="section-contacto">
-        <h2 class="con">Contacto</h2>
-        
-        <form action="mailto:zullyortiz.09@gmail.com" method="get" target="_blank">
-            <input type="text" name="nombre" placeholder="Nombre" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <textarea name="body" placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-        <div class="contact-info">
-            <a href="cv/Zully_Ortiz_CV.pdf" download class="btn-secondary">Descargar CV</a>
-        </div>
-        <a href="#inicio" class="back-to-top">Volver arriba ↑</a>
     </section>
 
+    <!-- Proyectos  -->
+    <section id="proyectos" class="seccion">
+        <div class="contenedor">
+            <h2 class="animar">Proyectos</h2>
+            <div class="cuadricula">
+                <div class="tarjeta escalar animar">
+                    <img src="img/pock-api.jpg" alt="PokeAPI" class="imagen-proyecto">
+                    <h3>PokeAPI</h3>
+                    <p>Un programa que usa la PokeAPI para simular una Pokédex, mostrando pokémones con su número, nombre y sonido, con navegación interactiva.</p>
+                    <a href="https://github.com/zu0910/JavaScript_OrtizZully/tree/main/Dia10" class="link"><img class="img-git" src="img/github.png" ></a>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <img src="img/spaces.jpg" alt="Space X" class="imagen-proyecto">
+                    <h3>Space X</h3>
+                    <p>Página interactiva y visualmente atractiva con información y consumo de API de SpaceX La cual fue elaborado con JavaScript, HTML&CSS.</p>
+                    <a href="https://github.com/zu0910/PROYECTO-FILTRO_JS_CAICEDOLUIS-ORTIZZULLY" class="link"><img class="img-git" src="img/github.png" ></a>
+                </div>
+                <div class="tarjeta escalar animar">
+                    <img src="img/campuslands.jpeg" alt="Campuslands ERP" class="imagen-proyecto">
+                    <h3>Campuslands ERP</h3>
+                    <p>Plataforma en Python para la gestión de procesos académicos, con registro y seguimiento de estudiantes.</p>
+                    <a href="https://github.com/Luis-Orlando-Henao-Bermon/Proyecto_Python_HenaoLuis_OrtizZully" class="link"><img class="img-git" src="img/github.png" ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lenguajes -->
+    <section id="lenguajes" class="seccion fondo-gris">
+        <div class="contenedor">
+            <h2 class="animar">Lenguaje y tecnologías</h2>
+            <div class="lenguajes animar">
+                <span>Java</span>
+                <span>Python</span>
+                <span>JavaScript</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>Python</span>
+                <span>SCRUM</span>
+                <span>Git</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="seccion">
+        <div class="contenedor">
+            <h2 class="animar">Contáctame</h2>
+            <form class="formulario animar">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button type="submit" class="boton1">Enviar</button>
+            </form>
+            <div class="contenido-contacto">
+                <div class="enlaces-sociales animar">
+                    <a href="#">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 14v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-6v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <div id="inferior">
-            <div id="links">
-                <div id="git"><a href="https://github.com/zu0910"><img id="Git" src="img/github.png" ></a></div>
-                <div id="linkled"><a href="https://www.linkedin.com/in/zully-ortiz-759559353/"><img id="linkle" src="img/linkedin.png" alt=""></a></div>
-            </div>
-            <div id="nombre">
-                <p>Zully Ortiz</p>
-                <p>Desarrolladora Full Stack Junior</p>
-                <p>&copy; Zully Ortiz - Campuslands</p>
-            </div>
-        </div>
+        <p>© 2025 Zully Ortíz - Campuslands. Todos los derechos reservados.</p>
     </footer>
-
-
-<script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>

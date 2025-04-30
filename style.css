@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f5;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegación */
+.navegacion{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 50;
+    transition: background-color 0.3s ease;
+}
+.navegacion.desplazado{
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navegacion .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo{
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    font-weight: bold;
+    color: #6b21a8;
+    text-decoration: none;
+}
+
+.enlaces{
+    display: flex;
+    gap: 20px;
+}
+
+.enlaces a{
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.enlaces a:hover{
+    color: #6b21a8;
+}
+
+.boton-menu{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menucito{
+    display: none;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.menucito a{
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.menucito a:hover {
+    background-color: #f3e8ff;
+}
+
+.menu{
+    display: none;
+}
+.boton-menu{
+    display: none;
+    font-size: 28px;
+    color: #6b21a8;
+    cursor: pointer;
+}
+/* Inicio */
+.inicio{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #f3e8ff, #bfdbfe);
+    text-align: center;
+}
+
+.inicio h1{
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 20px;
+}
+
+.inicio p{
+    font-size: clamp(1.5rem, 1.9vw, 4rem);
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+.boton{
+    display:inline-block;
+    background-color: #6b21a8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.boton1{
+    display:flex;
+    background-color: #6b21a8;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    margin: auto;
+}
+
+.boton:hover{
+    background-color: #5b1b8e;
+}
+
+/* Secciones */
+.seccion{
+    padding: 80px 0;
+}
+
+.seccion h2{
+    font-size: clamp(1.5rem, 1.9vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.fondo-gris{
+    background-color: #f0f0f5;
+}
+
+/* Sobre Mí */
+.contenido-sobre-mi{
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.foto{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6b21a8;
+    flex-shrink: 0;
+}
+
+.contenedor h2{
+    font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
+.contenido-sobre-mi p{
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: #4b5563;
+    line-height: 1.6;/* Separar lineas vertical*/
+    text-align: center;
+}
+
+/* Cudricula */
+
+.img-git {
+    width: 50px;
+    height: 50px;
+}
+.cuadricula{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tarjeta{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta h3{
+    font-size: clamp(1.5rem, 1.2vw, 2rem);
+    font-weight: 600;
+    color: #6b21a8;
+    margin-bottom: 10px;
+}
+
+.tarjeta p{
+    color: #4b5563;
+    font-size: clamp(1.1rem, 1vw, 2rem);
+}
+
+.tarjeta .link{
+    color: #6b21a8;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.tarjeta .link:hover{
+    text-decoration: underline;
+}
+
+.imagen-proyecto{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/*Lenguajes*/
+
+.lenguajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.lenguajes span{
+    background-color: #6b21a8;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: clamp(1.1rem, 1vw, 2rem);
+}
+
+/* Formulario */
+.formulario {
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    font-size: 16px;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.campo textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contenido-contacto {
+    text-align: center;
+}
+
+.contenido-contacto p {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 20px;
+}
+
+.enlaces-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.enlaces-sociales a {
+    color: #4b5563;
+    transition: color 0.3s ease;
+}
+
+.enlaces-sociales a:hover {
+    color: #6b21a8;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animaciones */
+.animar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.escalar {
+    transition: transform 0.3s ease;
+}
+
+.escalar:hover {
+    transform: scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .boton-menu{
+        display: block;
+    }
+    .menu:checked ~ .menucito{
+        display: block;
+    }
+    .enlaces{
+        display: none;
+    }
+
+    .menucito{
+        display: block;
+    }
+
+    .contenido-sobre-mi{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto{
+        margin-bottom: 20px;
+    }
+
+    .cuadricula{
+        grid-template-columns: 1fr;
+    }
+}
